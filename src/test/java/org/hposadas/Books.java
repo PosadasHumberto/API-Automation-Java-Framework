@@ -40,6 +40,7 @@ public class Books extends Base {
 
         Response createResponse = given()
                 .body(bookFile)
+                .log().all()
                 .when()
                 .post("/books");
 
@@ -49,6 +50,7 @@ public class Books extends Base {
                 .body("{\n" +
                         "\t\"book_id\": " + responseID + "\n" +
                         "}")
+                .log().all()
                 .when()
                 .delete("/books");
 
@@ -66,6 +68,7 @@ public class Books extends Base {
                         .body("{\n" +
                                 "\t\"book_id\": " + nonExistentBookID + "\n" +
                                 "}")
+                        .log().all()
                         .when()
                         .delete("/books");
 
