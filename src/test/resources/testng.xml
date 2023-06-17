@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test Suite">
+    <test name="Test">
+        <!--<groups>
+            <run>
+                <include name="GetGroup"/>
+            </run>
+        </groups>-->
+        <classes>
+            <class name="org.hposadas.Books" />
+        </classes>
+    </test>
+</suite>
