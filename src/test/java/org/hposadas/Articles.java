@@ -12,7 +12,7 @@ import static io.restassured.RestAssured.*;
 
 public class Articles extends Base{
 
-    @Test
+    @Test(groups = "GetGroup")
     public void getArticlesList() {
         Response response = given()
                 .log().all()
@@ -22,7 +22,7 @@ public class Articles extends Base{
         Assert.assertFalse(allArticles.isEmpty(), "No artices returned");
     }
 
-    @Test
+    @Test(groups = "PostGroup")
     public void createAndDeleteArticle() throws URISyntaxException {
         File articleFile = new File(getClass().getResource("/article.json").toURI());
 
@@ -48,7 +48,7 @@ public class Articles extends Base{
 
     }
 
-    @Test
+    @Test(groups = "PostGroup")
     public void deleteNonExistingArticle_FailMessage() {
         String nonExistingArticleID = "123456";
 

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-18T17:36:53Z" name="Command line suite" finished-at="2023-06-18T17:36:54Z" duration-ms="1369">
+    <groups>
+      <group name="GetGroup">
+        <method signature="Articles.getArticlesList()[pri:0, instance:org.hposadas.Articles@59838256]" name="getArticlesList" class="org.hposadas.Articles"/>
+      </group> <!-- GetGroup -->
+      <group name="PostGroup">
+        <method signature="Articles.createAndDeleteArticle()[pri:0, instance:org.hposadas.Articles@59838256]" name="createAndDeleteArticle" class="org.hposadas.Articles"/>
+        <method signature="Articles.deleteNonExistingArticle_FailMessage()[pri:0, instance:org.hposadas.Articles@59838256]" name="deleteNonExistingArticle_FailMessage" class="org.hposadas.Articles"/>
+      </group> <!-- PostGroup -->
+    </groups>
+    <test started-at="2023-06-18T17:36:53Z" name="Command line test" finished-at="2023-06-18T17:36:54Z" duration-ms="1369">
+      <class name="org.hposadas.Articles">
+        <test-method is-config="true" signature="setupRestAssured()[pri:0, instance:org.hposadas.Articles@59838256]" started-at="2023-06-18T19:36:53Z" name="setupRestAssured" finished-at="2023-06-18T19:36:53Z" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupRestAssured -->
+        <test-method signature="createAndDeleteArticle()[pri:0, instance:org.hposadas.Articles@59838256]" started-at="2023-06-18T19:36:53Z" name="createAndDeleteArticle" finished-at="2023-06-18T19:36:54Z" duration-ms="642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAndDeleteArticle -->
+        <test-method signature="deleteNonExistingArticle_FailMessage()[pri:0, instance:org.hposadas.Articles@59838256]" started-at="2023-06-18T19:36:54Z" name="deleteNonExistingArticle_FailMessage" finished-at="2023-06-18T19:36:54Z" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNonExistingArticle_FailMessage -->
+        <test-method signature="getArticlesList()[pri:0, instance:org.hposadas.Articles@59838256]" started-at="2023-06-18T19:36:54Z" name="getArticlesList" finished-at="2023-06-18T19:36:54Z" duration-ms="452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getArticlesList -->
+      </class> <!-- org.hposadas.Articles -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
